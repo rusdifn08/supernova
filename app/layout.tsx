@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import logo from "./logo.webp";
 
 // Space Grotesk: heading geometris modern dengan kerning rapat (otoritas visual)
 const heading = Space_Grotesk({
@@ -28,6 +29,11 @@ export const metadata: Metadata = {
     "multiplatform apps",
     "one-time payment software",
   ],
+  icons: {
+    icon: [{ url: logo.src, type: "image/webp" }],
+    shortcut: logo.src,
+    apple: logo.src,
+  },
 };
 
 export default function RootLayout({
